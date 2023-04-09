@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# code to find out what’s keeping your Ubuntu container’s Nginx installation  find out what’s keeping your Ubuntu container’s Nginx installation
+
+# to install nginx
+	sudo apt-get update
+	sudo apt-get -y install nginx
+
+# to view all processes that are listening on a port.
+	sudo netstat -tulpn
+
+# to get more information about the processes that are using port 80.
+	sudo lsof -i :80
+
+# to view the status of the Nginx service and determine if it is running correctly.
+	sudo systemctl status nginx.service
+
+# restart nginx
+	sudo service nginx restart
