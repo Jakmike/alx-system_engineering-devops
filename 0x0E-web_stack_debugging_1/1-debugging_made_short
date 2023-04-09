@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # this code configures an Nginx server to listen on port 80 from port 8080
-# it  replaces what is in sites-enabled with what is in site-available
 cp -r /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 service nginx restart
 pkill -o nginx
